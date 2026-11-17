@@ -1,0 +1,78 @@
+<header class="top">
+  <a class="logo" href="#inicio"><span class="mk">&gt;_</span><span class="txt">Tux<b>Lab</b><span class="cur"></span></span></a>
+  <nav class="tabs">
+    <a href="#inicio" data-v="inicio">Inicio</a>
+    <a href="#aprender" data-v="aprender">Aprender</a>
+    <a href="#laboratorio" data-v="laboratorio">Terminal libre</a>
+    <a href="#tests" data-v="tests">Tests</a>
+    <a href="#referencia" data-v="referencia">Chuleta</a>
+  </nav>
+  <div class="xp" id="xp"></div>
+</header>
+
+<main>
+  <section class="view" id="v-inicio">
+    <div class="wrap">
+      <div class="hero">
+        <div>
+          <div class="kicker">// PLATAFORMA INTERACTIVA · 19 LECCIONES · 4 NIVELES</div>
+          <h1>Aprende Linux <em>escribiendo</em> órdenes de verdad.</h1>
+          <p>Una terminal simulada en tu navegador, con su propio sistema de archivos, usuarios, procesos y servicios. Lee un poco, prueba y supera misiones: de tu primer <code>ls</code> a montar un servidor web y analizar un ataque.</p>
+          <div class="cta"><a class="btn primary" id="cta" href="#leccion-1">Empezar desde cero →</a><a class="btn" href="#laboratorio">Abrir la terminal libre</a></div>
+          <div class="stats" id="stats"></div>
+        </div>
+        <div class="demo"><div class="bar"><i></i><i></i><i></i><span>estudiante@tuxlab: ~</span></div><pre id="demo"></pre></div>
+      </div>
+      <h2 class="sec">El recorrido</h2>
+      <div class="levels" id="levels"></div>
+      <h2 class="sec">Insignias</h2>
+      <div class="badges" id="badges"></div>
+      <h2 class="sec">Cómo funciona</h2>
+      <div class="how">
+        <div><b>01 · LEE</b><h3>Teoría corta y al grano</h3><p>Cada lección explica una idea con ejemplos. Pulsa <b>▶ Probar</b> para llevar cualquier ejemplo a la terminal.</p></div>
+        <div><b>02 · ESCRIBE</b><h3>Una terminal que responde</h3><p>Más de 110 órdenes simuladas con sus opciones, errores reales, tuberías, redirecciones, permisos y sudo. Romper cosas está permitido.</p></div>
+        <div><b>03 · SUPERA</b><h3>Misiones que se comprueban solas</h3><p>La plataforma detecta cuándo cumples cada objetivo. Gana XP, sube de rango, desbloquea insignias y ponte a prueba en los tests.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="view" id="v-aprender">
+    <aside class="side" id="side"></aside>
+    <article class="lesson" id="lesson"></article>
+    <div class="termwrap">
+      <div class="termbar"><span class="dots"><i></i><i></i><i></i></span><span class="tt">estudiante@tuxlab — bash</span><button id="resetL" title="Vuelve a dejar el sistema como al empezar la lección">↺ Reiniciar</button></div>
+      <div id="termL"></div>
+    </div>
+  </section>
+
+  <section class="view" id="v-laboratorio">
+    <div class="termwrap">
+      <div class="termbar"><span class="dots"><i></i><i></i><i></i></span><span class="tt">estudiante@tuxlab — terminal libre</span><button id="resetB">↺ Reiniciar sistema</button></div>
+      <div id="termB"></div>
+    </div>
+    <aside class="labside">
+      <h3>Ideas para explorar</h3>
+      <p>Aquí no hay misiones: es tu propio Linux para experimentar. Toca una idea para escribirla en la terminal.</p>
+      <div id="ideas"></div>
+    </aside>
+  </section>
+
+  <section class="view" id="v-tests">
+    <div class="wrap narrow qwrap">
+      <h1>Tests por nivel</h1>
+      <p class="muted">Seis preguntas por nivel, con explicación en cada respuesta. Tu mejor resultado suma 10 XP por acierto.</p>
+      <div class="qtabs" id="qtabs"></div>
+      <div class="qcard" id="qcard"></div>
+    </div>
+  </section>
+
+  <section class="view" id="v-referencia">
+    <div class="wrap rwrap">
+      <h1>Chuleta de órdenes</h1>
+      <p class="muted">Todas las órdenes que entiende TuxLab, con su sintaxis y un ejemplo listo para probar.</p>
+      <div class="rtools"><input id="rq" type="search" placeholder="Busca: grep, permisos, red…" autocomplete="off"><div class="rcats" id="rcats"></div></div>
+      <div class="rgrid" id="rgrid"></div>
+    </div>
+  </section>
+</main>
+<div class="toasts" id="toasts"></div>
